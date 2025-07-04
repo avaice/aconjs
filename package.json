@@ -17,8 +17,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "prepublishOnly": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "ffmpeg",
@@ -32,12 +31,12 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/aconjs.git"
+    "url": "git+https://github.com/avaice/aconjs.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/aconjs/issues"
+    "url": "https://github.com/avaice/aconjs/issues"
   },
-  "homepage": "https://github.com/yourusername/aconjs#readme",
+  "homepage": "https://github.com/avaice/aconjs#readme",
   "devDependencies": {
     "@ffmpeg/types": "^0.12.4",
     "typescript": "^5.8.3"
