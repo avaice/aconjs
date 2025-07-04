@@ -1,0 +1,50 @@
+{
+  "name": "aconjs",
+  "version": "0.1.0",
+  "description": "convert to audio file from everything media formats",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ffmpeg",
+    "audio",
+    "video",
+    "transcoding",
+    "media",
+    "conversion"
+  ],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/aconjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/aconjs/issues"
+  },
+  "homepage": "https://github.com/yourusername/aconjs#readme",
+  "devDependencies": {
+    "@ffmpeg/types": "^0.12.4",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@ffmpeg/ffmpeg": "^0.12.15",
+    "@ffmpeg/util": "^0.12.2",
+    "mime": "^4.0.7"
+  }
+}
