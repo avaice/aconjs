@@ -3,7 +3,7 @@ import { toBlobURL } from "@ffmpeg/util";
 import { transcoder } from "./transcoder";
 
 export const createTranscoder = async (logCallback?: (log: string) => void) => {
-  const baseURL = "https://unpkg.com/@ffmpeg/core@0.12.10/dist/umd";
+  const baseURL = "https://unpkg.com/@ffmpeg/core@0.12.10/dist/esm";
   const ffmpeg = new FFmpeg();
   ffmpeg.on("log", ({ message }) => {
     logCallback?.(message);
